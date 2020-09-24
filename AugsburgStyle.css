@@ -1,0 +1,22 @@
+/*
+  AugsburgStyle.css
+  styling for the Augsburg virtual tour home page
+*/
+
+
+h1{
+  text-align: center;
+  font-size: 5vw;
+  color: #660033;
+  font-family: serif,
+  }
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+img.logo{
+  width: 20%;
+  height: 10%pt;
+}
