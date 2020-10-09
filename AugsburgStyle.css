@@ -20,3 +20,85 @@ img.logo{
   width: 20%;
   height: 10%pt;
 }
+
+h2{
+  text-align: center;
+  font-size: 3vw;
+  font-family: serif;
+}
+
+table.sports{
+  text-align: center;
+  width: 100%;
+  font-size: 3vw;
+  font-family: serif;
+}
+
+body.athletics{
+  background-color:#660033;
+
+}
+
+img.athletics{
+    display: block;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 2pt;
+}
+
+td.bar{
+  text-align: center;
+  width:33%;
+  height: 10%;
+  color: white;
+  text-decoration: none;
+  background-color: #660033;
+}
+
+table.lowbar{
+  text-align: center;
+  width: 100%;
+  height: 5%;
+  font-size: 20pt;
+  font-family: serif, monospace;
+  border: 1px solid black;
+}
+
+a.homelink{
+  color: white;
+  text-decoration: none;
+  background-color: #660033;
+  display: block;
+}
+
+a.homelink: visited{
+  color: red;
+  text-decoration: none;
+  background-color: #660033;
+  display: inline-block;
+}
+
+a.homelink: hover{
+  color: black;
+  text-shadow: 0px 4px grey;
+}
+
+td.barlogo{
+  width:33%;
+  height: 10%;
+}
+
+p.building{
+  text-align: left;
+  font-size: 16pt;
+  color: black;
+  font-family: serif, monospace;
+}
+
+p.moreinfo{
+  text-align: left;
+  font-size: 16pt;
+  color: black;
+  font-family: serif, monospace;
+}
