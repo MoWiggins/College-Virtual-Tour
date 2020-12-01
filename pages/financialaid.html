@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
-<html lang="en">
-<meta charset="UTF-8">
 <!-- Header -->
 <head>
+<html lang="en">
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="AddMenu.js" type="text/javascript" defer> </script>
+
+
 <h1>
 Financial Aid Calculator
 </h1>
@@ -14,12 +18,20 @@ Please fill out the following information to estimate your financial need based 
 </head>
 <!-- EFC + FAFSA GRANTS + OUTSIDE SCHOLARSHIPS + AUGSBURG SCHOLARSHIPS - AUGSBURG TUITION -->
 
+<div class="sidebar"> </div>
 <body>
+
+
+<!-- Student Name-->
+<p> Student Info </p>
+<div><label for="efc">What is your name?</label>
+<input type="text" id="studentname" name="studentname" >
+
 
 <!-- EFC -->
 <p> Expected Family Contribution </p>
 <div><label for="efc">What is your EFC?</label>
-<input type="input" id="household" name="household" placeholder="$40000">
+<input type="input" id="efc" name="efc" placeholder="$40000">
 
 
 <!-- FAFSA -->
@@ -37,29 +49,39 @@ Please fill out the following information to estimate your financial need based 
 <p>What is the total amount of your Augsburg scholarships:</p>
 <input type="input" id="AugsburgScholarships" name="AugsburgScholarships" placeholder="$5000">
 
+<div id = "msg">
+  <pre></pre>
+</div>
+
+
 <button
 type="button"
-name="button"
-onclick="FAC()">
+id="button">
 Click Me
 </button>
 
 <script type="text/javascript">
-  function FAC()
-  {
-  var householdCost = parseInt(document.getElementById("household").value);
-  var fafsaCost     = parseInt(document.getElementById("pell").value);
-  var OutsideScholarships  = parseInt(document.getElementById("OutsideScholarships").value);
-  var AugsburgScholarships = parseInt(document.getElementById("AugsburgScholarships").value);
-  var AugsburgTuition = 39995
-  var totalScholarships = householdCost + fafsaCost + OutsideScholarships + AugsburgScholarships;
-  var SemesterAmount = (AugsburgTuition-totalScholarships)/2
+//An array where we will hold the info about a students potential financial aid.
+let studentAidInfoArray = [];
 
-  alert("Your estimated tuition per semester is:  " + SemesterAmount);
+const addStudentAidInfo = (ev) => {
+  let studentAidInfo = {
+    studentname: document.getElementById("studentname").value,
+    efc:  document.getElementById("efc").value,
+    pell: document.getElementById("pell").value,
+    os: document.getElementById("OutsideScholarships").value,
+    as: document.getElementById("AugsburgScholarships").value
   }
-
+  studentAidInfoArray.push(studentAidInfo); //we add the info into the array
+  //for display purposes only
+  console.warn('added' , {studentAidInfoArray} );
+  let pre = document.querySelector('#msg pre');
+  pre.textContent = '\n' + JSON.stringify(studentAidInfoArray, '\t', 2 );
+  localStorage.setItem('StudentAidInfo' , JSON.stringify(studentAidInfoArray) );
+}
+document.addEventListener("DOMContentLoaded" , () => {
+    document.getElementById("button").addEventListener("click", addStudentAidInfo);
+});
 </script>
 </body>
-
-
 </html>

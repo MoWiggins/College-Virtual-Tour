@@ -6,7 +6,7 @@ var buttons = [ //this is an array that we will add into the localStorage
   },
   {
     "title": "Events",
-    "link": "#",
+    "link": "financialaid.html",
   },
   {
     "title": "Financial Aid Calculator",
