@@ -2,16 +2,16 @@
 <html>
 <html lang="en">
 <meta charset="UTF-8">
-<!-- Header -->
+
 <head>
-<h1>
-Financial Aid Calculator
-</h1>
-<p>
-Welcome to our financial aid calculator, every student should know the cost of their education. We are here to help you with that on your virtual college tour.
-Please fill out the following information to estimate your financial need based on income, assets, family size and demographics.
-</p>
+  <link href= "styling/FinancialAidStyling.css" rel = "stylesheet" type = "text/css">
+  <img src = "Images/augsburg_logo.png" class="logo"> <h1> Financial Aid Calculator </h1>
+  <h2>
+    Welcome to our financial aid calculator, every student should know the cost of their education. We are here to help you with that on your virtual college tour.
+    Please fill out the following information to estimate your financial need based on income, assets, family size and demographics.
+  </h2>
 </head>
+
 <!-- EFC + FAFSA GRANTS + OUTSIDE SCHOLARSHIPS + AUGSBURG SCHOLARSHIPS - AUGSBURG TUITION -->
 
 <body>
@@ -37,12 +37,7 @@ Please fill out the following information to estimate your financial need based 
 <p>What is the total amount of your Augsburg scholarships:</p>
 <input type="input" id="AugsburgScholarships" name="AugsburgScholarships" placeholder="$5000">
 
-<button
-type="button"
-name="button"
-onclick="FAC()">
-Click Me
-</button>
+<button type="button" name="button" onclick="FAC()"> Click Me </button>
 
 <script type="text/javascript">
   function FAC()
