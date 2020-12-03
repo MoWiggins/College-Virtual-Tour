@@ -1,65 +1,80 @@
 <!DOCTYPE html>
 <html>
+<html lang="en">
+<meta charset="UTF-8">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="styling/SideBarNav-style.css"> </link>
+<link rel="stylesheet" href="styling/financial-styling.css"> </link>
+
 <!-- Header -->
 <head>
-<html lang="en">
-  <meta charset="UTF-8">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script src="AddMenu.js" type="text/javascript" defer> </script>
+  <input type="checkbox" id = "check">
+  <label for="check">
+    <i class="fas fa-bars" id="navbar"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
 
+  <div class="sidebar">
+    <header> Menu </header>
+    <ul>
+      <li> <a href="SchoolSelection.html"> Home  </a> </li>
+      <li> <a href="#">  Events </a> </li>
+      <li> <a href="financialaid.html" > Financial Aid Calculator </a> </li>
+      <li> <a href="#" > Athletics </a> </li>
+      <li> <a href="https://admissions.augsburg.edu/apply/"> Apply Now </a> </li>
+    </ul>
+  </div>
 
-<h1>
-Financial Aid Calculator
-</h1>
-<p>
-Welcome to our financial aid calculator, every student should know the cost of their education. We are here to help you with that on your virtual college tour.
-Please fill out the following information to estimate your financial need based on income, assets, family size and demographics.
-</p>
+<title> Augsburg Financial Aid Calculator </title>
 </head>
 <!-- EFC + FAFSA GRANTS + OUTSIDE SCHOLARSHIPS + AUGSBURG SCHOLARSHIPS - AUGSBURG TUITION -->
 
-<div class="sidebar"> </div>
 <body>
-
-
-<!-- Student Name-->
-<p> Student Info </p>
-<div><label for="studentname">What is your name?</label>
-<input type="text" id="studentname" name="studentname" >
-
+<h1>Financial Aid Calculator</h1>
+<p>  Welcome to our financial aid calculator, every student should know the cost of their education. We are here to help you with that on your virtual college tour.
+Please fill out the following information to estimate your financial need based on income, assets, family size and demographics. </p>
 
 <!-- EFC -->
-<p> Expected Family Contribution </p>
-<div><label for="efc">What is your EFC?</label>
-<input type="input" id="efc" name="efc" placeholder="$40000">
+<div>
+  <form>
+    <p> Student Info </p>
+    <div><label for="studentname">What is your name?</label>
+    <input type="text" id="studentname" name="studentname" >
 
+
+    <p> Expected Family Contribution </p>
+    <label for="efc"> What is your EFC?</label>
+    <input type="input" id="efc" name="efc" placeholder="$4000">
 
 <!-- FAFSA -->
-<p>FAFSA Grants</p>
-<div><label for="pell"> How much is your FAFSA Pell Grant?:</label>
-<input type="input" id="pell" name="pell" placeholder="$5000">
+    <p>FAFSA Grants</p>
+    <label for="pell"> How much is your FAFSA Pell Grant?:</label>
+    <input type="input" id="pell" name="pell" placeholder="$5000">
 
 <!-- Any Outside Scholarships? -->
-<p>Outside Scholarships</p>
-<p>What is the total amount of your outside scholarships:</p>
-<input type="input" id="OutsideScholarships" name="OutsideScholarships" placeholder="$5000">
+    <p> Outside Scholarships </p>
+    <label for="OutsideScholarships"> What is the total amount of your outside scholarships?: </label>
+    <input type="input" id="OutsideScholarships" name="OutsideScholarships" placeholder="$5000">
 
 <!--AUGSBURG SCHOLARSHIPS-->
-<p>Augsburg Scholarships</p>
-<p>What is the total amount of your Augsburg scholarships:</p>
-<input type="input" id="AugsburgScholarships" name="AugsburgScholarships" placeholder="$5000">
+    <p> Ausgburg Scholarships </p>
+    <label for="AugsburgScholarships"> What is the total amount of your Augsburg scholarships?: </label>
+    <input type="input" id="AugsburgScholarships" name="AugsburgScholarships" placeholder="$5000">
 
-<div id = "msg">
-  <pre></pre>
-</div>
+    <div id = "msg">
+      <pre></pre>
+    </div>
+</form>
+<div>
 
 
-<button
-type="button"
-id="button">
-Click Me
-</button>
+  <button
+  type="button"
+  id="button">
+  Click Me
+  </button>
 
+<!-- javascript code -->
 <script type="text/javascript">
 //An array where we will hold the info about a students potential financial aid.
 let studentAidInfoArray = [];
@@ -82,6 +97,7 @@ const addStudentAidInfo = (ev) => {
 document.addEventListener("DOMContentLoaded" , () => {
     document.getElementById("button").addEventListener("click", addStudentAidInfo);
 });
+
 </script>
 </body>
 </html>
