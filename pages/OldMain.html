@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset = "utf-8"/>
-  <title> Old Main</title>
-  <link href="styling/AugsburgStyle.css" rel = "stylesheet" type="text/css">
-  <!-- this is to be used as a template for the other building info pages-->
-</head>
-<header>
-  <table class="bar">
-    <tr>
-      <td class="bar"> <!--Space for home button or side menu--> menu here</td>
-      <td class="barlogo"> <h1><img src="Images/augsburg_logo.png"> <!-- building name --></h1></td>
-      <td class="bar"> next <!--to move onto the "next" building--> </td>
-    </tr>
-  </table>
-</header>
+<html lang="en">
+<meta charset = "utf-8"/>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="styling/SideBarNav-style.css"> </link>
+<link rel="stylesheet" href="styling/augsburgstyle.css"> </link>
 
-<body>
-<img src= "https://augsburg.university-tour.com/repository/zoom/27af4599f13897e1f6a3a85b6d736eb8Margaret%20Sotos%20-%20OldMainFront.jpg" alt="Old Main" style="width:40%">
-<img src= "https://augsburg.university-tour.com/repository/zoom/fdff1c19496f0bc87da60023ab754f1619-0221_02.jpg" alt="Art Room" style="width:40%">
-<p class="building"> <!-- informatino about the specific building --> Old Main is the oldest building on Augsburg's campus.
-The building is used mainly as a multipurpose classroom space for courses focused towards modern languages and art departments.
-While the third floor does contain an art studio as you can see above, the building also has an art gallery and studio on the lower level.</p>
-<p>
+<head>
+  <!-- this is to be used as a template for the other building info pages-->
+  <input type="checkbox" id = "check">
+  <label for="check">
+    <i class="fas fa-bars" id="navbar"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+
+  <div class="sidebar">
+    <header> Menu </header>
+    <ul>
+      <li> <a href="SchoolSelection.html"> Home  </a> </li>
+      <li> <a href="#">  Events </a> </li>
+      <li> <a href="financialaid.html" > Financial Aid Calculator </a> </li>
+      <li> <a href="#" > Athletics </a> </li>
+      <li> <a href="https://admissions.augsburg.edu/apply/"> Apply Now </a> </li>
+    </ul>
+  </div>
+
+<title> Old Main</title>
+
+<header>
   <table class="lowbar">
     <tr>
       <td class="bar"> <!-- link back to map --> Map</td>
@@ -31,6 +35,22 @@ While the third floor does contain an art studio as you can see above, the build
       <td class="bar"> <a href="AugsburgHome.html" class="homelink">Home</a> </td>
     </tr>
   </table>
+
+</head>
+
+
+
+</header>
+
+<body>
+  <img src= "https://augsburg.university-tour.com/repository/zoom/27af4599f13897e1f6a3a85b6d736eb8Margaret%20Sotos%20-%20OldMainFront.jpg" alt="Old Main" style="width:40%">
+  <img src= "https://augsburg.university-tour.com/repository/zoom/fdff1c19496f0bc87da60023ab754f1619-0221_02.jpg" alt="Art Room" style="width:40%">
+  <p class="building"> <!-- informatino about the specific building --> Old Main is the oldest building on Augsburg's campus.
+  The building is used mainly as a multipurpose classroom space for courses focused towards modern languages and art departments.
+  While the third floor does contain an art studio as you can see above, the building also has an art gallery and studio on the lower level.</p>
+<p>
+</body>
+
 </p>
 
 </html>

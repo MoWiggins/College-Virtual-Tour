@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset = "utf-8"/>
-  <title> Science Hall</title>
-  <link href="styling/AugsburgStyle.css" rel = "stylesheet" type="text/css">
-  <!-- this is to be used as a template for the other building info pages-->
-</head>
-<header>
-  <table class="bar">
-    <tr>
-      <td class="bar"> <!--Space for home button or side menu--> menu here</td>
-      <td class="barlogo"> <h1><img src="Images/augsburg_logo.png"> <!-- building name --></h1></td>
-      <td class="bar"> next <!--to move onto the "next" building--> </td>
-    </tr>
-  </table>
-</header>
+<html lang="en">
+<meta charset = "utf-8"/>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="styling/SideBarNav-style.css"> </link>
+<link rel="stylesheet" href="styling/augsburgstyle.css"> </link>
 
-<body>
-<img src= "https://augsburg.university-tour.com/repository/zoom/15c09a41f3ba4da5e1b4e8cb5d655c6bMargaret%20Sotos%20-%20LargeClassroomScienceHall.jpg" alt="Science Room" style="width:40%">
-<img src= "https://augsburg.university-tour.com/repository/zoom/1a2e19bc7958200535ff1c086979a7deMargaret%20Sotos%20-%20CampusCupboard3.jpg" alt="Campus Cupboard" style="width:40%">
-<p class="building"> <!-- informatino about the specific building --> While the Science Hall is no longer the central
-space for the NorthStar STEM Program, it is still home to certain offices like the Equity and Inclusion Initiatives Office.
-The building also contains Augsburgs popular campus cupboard where students can stop by to donate or pick up
-local produce, clothes, and shoes.</p>
-<p>
+<head>
+  <!-- this is to be used as a template for the other building info pages-->
+  <input type="checkbox" id = "check">
+  <label for="check">
+    <i class="fas fa-bars" id="navbar"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+
+  <div class="sidebar">
+    <header> Menu </header>
+    <ul>
+      <li> <a href="SchoolSelection.html"> Home  </a> </li>
+      <li> <a href="#">  Events </a> </li>
+      <li> <a href="financialaid.html" > Financial Aid Calculator </a> </li>
+      <li> <a href="#" > Athletics </a> </li>
+      <li> <a href="https://admissions.augsburg.edu/apply/"> Apply Now </a> </li>
+    </ul>
+  </div>
+
+<title> Science Hall</title>
+
+<header>
   <table class="lowbar">
     <tr>
       <td class="bar"> <!-- link back to map --> Map</td>
@@ -32,6 +35,23 @@ local produce, clothes, and shoes.</p>
       <td class="bar"> <a href="AugsburgHome.html" class="homelink">Home</a> </td>
     </tr>
   </table>
+
+</head>
+
+
+
+</header>
+
+<body>
+  <img src= "https://augsburg.university-tour.com/repository/zoom/15c09a41f3ba4da5e1b4e8cb5d655c6bMargaret%20Sotos%20-%20LargeClassroomScienceHall.jpg" alt="Science Room" style="width:40%">
+  <img src= "https://augsburg.university-tour.com/repository/zoom/1a2e19bc7958200535ff1c086979a7deMargaret%20Sotos%20-%20CampusCupboard3.jpg" alt="Campus Cupboard" style="width:40%">
+  <p class="building"> <!-- informatino about the specific building --> While the Science Hall is no longer the central
+  space for the NorthStar STEM Program, it is still home to certain offices like the Equity and Inclusion Initiatives Office.
+  The building also contains Augsburgs popular campus cupboard where students can stop by to donate or pick up
+  local produce, clothes, and shoes.</p>
+<p>
+</body>
+
 </p>
 
 </html>

@@ -95,6 +95,7 @@ p.building{
   font-size: 16pt;
   color: black;
   font-family: serif, monospace;
+  padding: 15px; 
 }
 
 p.moreinfo{

@@ -1,19 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<meta charset = "utf-8"/>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="styling/SideBarNav-style.css"> </link>
+<link rel="stylesheet" href="styling/augsburgstyle.css"> </link>
+
 <head>
-  <meta charset = "utf-8"/>
-  <title> Christensen Center</title>
-  <link href="styling/AugsburgStyle.css" rel = "stylesheet" type="text/css">
   <!-- this is to be used as a template for the other building info pages-->
-</head>
+  <input type="checkbox" id = "check">
+  <label for="check">
+    <i class="fas fa-bars" id="navbar"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+
+  <div class="sidebar">
+    <header> Menu </header>
+    <ul>
+      <li> <a href="SchoolSelection.html"> Home  </a> </li>
+      <li> <a href="#">  Events </a> </li>
+      <li> <a href="financialaid.html" > Financial Aid Calculator </a> </li>
+      <li> <a href="#" > Athletics </a> </li>
+      <li> <a href="https://admissions.augsburg.edu/apply/"> Apply Now </a> </li>
+    </ul>
+  </div>
+
+<title> Christensen Center</title>
+
 <header>
-  <table class="bar">
+  <table class="lowbar">
     <tr>
-      <td class="bar"> <!--Space for home button or side menu--> menu here</td>
-      <td class="barlogo"> <h1><img src="Images/augsburg_logo.png"> <!-- building name --></h1></td>
-      <td class="bar"> next <!--to move onto the "next" building--> </td>
+      <td class="bar"> <!-- link back to map --> Map</td>
+      <td class="bar"> <a href="MoreInfoTemplate.html" class="homelink">
+        More Information</a></td>
+      <td class="bar"> <a href="AugsburgHome.html" class="homelink">Home</a> </td>
     </tr>
   </table>
+
+</head>
+
+
+
 </header>
 
 <body>
@@ -23,14 +49,8 @@
 of resources for students to use such as Einsteins Bro's Bagels, CGEE which focuses on study abroad, and even a student
 lounge for students to kick back and socialize.</p>
 <p>
-  <table class="lowbar">
-    <tr>
-      <td class="bar"> <!-- link back to map --> Map</td>
-      <td class="bar"> <a href="MoreInfoTemplate.html" class="homelink">
-        More Information</a></td>
-      <td class="bar"> <a href="AugsburgHome.html" class="homelink">Home</a> </td>
-    </tr>
-  </table>
+</body>
+
 </p>
 
 </html>

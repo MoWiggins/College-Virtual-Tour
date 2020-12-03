@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset = "utf-8"/>
-  <title> Oren Gateway Center</title>
-  <link href="styling/AugsburgStyle.css" rel = "stylesheet" type="text/css">
-  <!-- this is to be used as a template for the other building info pages-->
-</head>
-<header>
-  <table class="bar">
-    <tr>
-      <td class="bar"> <!--Space for home button or side menu--> menu here</td>
-      <td class="barlogo"> <h1><img src="Images/augsburg_logo.png"> <!-- building name --></h1></td>
-      <td class="bar"> next <!--to move onto the "next" building--> </td>
-    </tr>
-  </table>
-</header>
+<html lang="en">
+<meta charset = "utf-8"/>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="styling/SideBarNav-style.css"> </link>
+<link rel="stylesheet" href="styling/augsburgstyle.css"> </link>
 
-<body>
-<img src = "https://mgmcgrath.com/wp-content/uploads/2012/02/DSCF24141.jpg" alt="OGC" style="width:40%">
-<img src = "https://www.augsburg.edu/now/wp-content/uploads/sites/3/2019/11/OGC.jpg" alt = "OGC Lobby" style="width:40%">
-<p class="building"> <!-- informatino about the specific building --> Oren Gateway Center is a multi-purpose building that
-offers a dorm living space for students in the StepUP program as well as a lobby/workspace for other to complete their
-coursework. OGC also offers conference rooms, the schools bookstore, and the neighborhood friendly cafe Nabo. </p>
-<p>
+<head>
+  <!-- this is to be used as a template for the other building info pages-->
+  <input type="checkbox" id = "check">
+  <label for="check">
+    <i class="fas fa-bars" id="navbar"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+
+  <div class="sidebar">
+    <header> Menu </header>
+    <ul>
+      <li> <a href="SchoolSelection.html"> Home  </a> </li>
+      <li> <a href="#">  Events </a> </li>
+      <li> <a href="financialaid.html" > Financial Aid Calculator </a> </li>
+      <li> <a href="#" > Athletics </a> </li>
+      <li> <a href="https://admissions.augsburg.edu/apply/"> Apply Now </a> </li>
+    </ul>
+  </div>
+
+<title> Oren Gateway Center</title>
+
+<header>
   <table class="lowbar">
     <tr>
       <td class="bar"> <!-- link back to map --> Map</td>
@@ -31,6 +35,22 @@ coursework. OGC also offers conference rooms, the schools bookstore, and the nei
       <td class="bar"> <a href="AugsburgHome.html" class="homelink">Home</a> </td>
     </tr>
   </table>
+
+</head>
+
+
+
+</header>
+
+<body>
+  <img src = "https://mgmcgrath.com/wp-content/uploads/2012/02/DSCF24141.jpg" alt="OGC" style="width:40%">
+  <img src = "https://www.augsburg.edu/now/wp-content/uploads/sites/3/2019/11/OGC.jpg" alt = "OGC Lobby" style="width:40%">
+  <p class="building"> <!-- informatino about the specific building --> Oren Gateway Center is a multi-purpose building that
+  offers a dorm living space for students in the StepUP program as well as a lobby/workspace for other to complete their
+  coursework. OGC also offers conference rooms, the schools bookstore, and the neighborhood friendly cafe Nabo.  </p>
+<p>
+</body>
+
 </p>
 
 </html>
