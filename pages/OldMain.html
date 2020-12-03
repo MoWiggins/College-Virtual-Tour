@@ -1,56 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset = "utf-8"/>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<link rel="stylesheet" href="styling/SideBarNav-style.css"> </link>
-<link rel="stylesheet" href="styling/augsburgstyle.css"> </link>
-
+<html>
 <head>
-  <!-- this is to be used as a template for the other building info pages-->
-  <input type="checkbox" id = "check">
-  <label for="check">
-    <i class="fas fa-bars" id="navbar"></i>
-    <i class="fas fa-times" id="cancel"></i>
-  </label>
-
-  <div class="sidebar">
-    <header> Menu </header>
-    <ul>
-      <li> <a href="SchoolSelection.html"> Home  </a> </li>
-      <li> <a href="#">  Events </a> </li>
-      <li> <a href="financialaid.html" > Financial Aid Calculator </a> </li>
-      <li> <a href="#" > Athletics </a> </li>
-      <li> <a href="https://admissions.augsburg.edu/apply/"> Apply Now </a> </li>
-    </ul>
-  </div>
-
-<title> Old Main</title>
-
+  <meta charset = "utf-8"/>
+  <title> Old Main</title>
+  <link href= "styling/AugsburgStyle.css" rel = "stylesheet" type = "text/css">
+  <link rel="stylesheet" href="styling/sidebarnav-style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="AddMenu.js" type="text/javascript"></script>
+</head>
 <header>
-  <table class="lowbar">
+  <table class="bar">
     <tr>
-      <td class="bar"> <!-- link back to map --> Map</td>
-      <td class="bar"> <a href="MoreInfoTemplate.html" class="homelink">
-        More Information</a></td>
-      <td class="bar"> <a href="AugsburgHome.html" class="homelink">Home</a> </td>
+      <td class="bar"><input type="checkbox" id = "check">
+          <label for="check">
+            <i class="fas fa-bars" id="navbar"></i>
+            <i class="fas fa-times" id="cancel"></i>
+          </label><div class="sidebar"> </div></td>
+      <td class="barlogo"> <h1><img src="Images/augsburg_logo.png"> Old Main </h1></td>
+      <td class="bar"> <a href="AugsburgHome.html"><img src="Images/homeIcon.png"> </a></td>
     </tr>
   </table>
-
-</head>
-
-
-
 </header>
 
 <body>
-  <img src= "https://augsburg.university-tour.com/repository/zoom/27af4599f13897e1f6a3a85b6d736eb8Margaret%20Sotos%20-%20OldMainFront.jpg" alt="Old Main" style="width:40%">
-  <img src= "https://augsburg.university-tour.com/repository/zoom/fdff1c19496f0bc87da60023ab754f1619-0221_02.jpg" alt="Art Room" style="width:40%">
-  <p class="building"> <!-- informatino about the specific building --> Old Main is the oldest building on Augsburg's campus.
-  The building is used mainly as a multipurpose classroom space for courses focused towards modern languages and art departments.
-  While the third floor does contain an art studio as you can see above, the building also has an art gallery and studio on the lower level.</p>
+<p><img src= "https://augsburg.university-tour.com/repository/zoom/27af4599f13897e1f6a3a85b6d736eb8Margaret%20Sotos%20-%20OldMainFront.jpg" alt="Old Main" style="width:40%">
+  <img src= "https://augsburg.university-tour.com/repository/zoom/fdff1c19496f0bc87da60023ab754f1619-0221_02.jpg" alt="Art Room" style="width:40%"></p>
+<p class="building"> As the name may suggest, this is the oldest building on campus.
+  It was built in 1902 and is technically the "new" old main. The original was
+  demolished to make room for the science hall. Old Main is home to the modern language
+  and art departments.
+  </p>
 <p>
-</body>
-
+  <table class="lowbar">
+    <tr>
+      <td class="bar"> <!-- link back to map --> Map</td>
+      <td class="bar"> <a href="https://digitours.augsburg.edu/items/show/2" class="homelink">
+        More Information</a></td>
+      <td class="bar"> <a href="AugsburgHome.html" class="homelink">Home</a> </td>
+    </tr>
+    <tr>
+      <td class="arrow"> <a href="LutherHall.html"><img src="Images/backArrow.png"></td>
+      <td>  </td>
+      <td class="arrow"> <a href="ScienceHall.html"><img src="Images/nextArrow.png" class="arrow"></a></td>
+    </tr>
+  </table>
 </p>
 
 </html>
