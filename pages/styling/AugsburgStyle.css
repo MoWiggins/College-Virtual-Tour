@@ -2,7 +2,6 @@
   AugsburgStyle.css
   styling for the Augsburg virtual tour home page
 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
 
 
 h1{
@@ -95,7 +94,6 @@ p.building{
   font-size: 16pt;
   color: black;
   font-family: serif, monospace;
-  padding: 15px; 
 }
 
 p.moreinfo{
@@ -103,4 +101,39 @@ p.moreinfo{
   font-size: 16pt;
   color: black;
   font-family: serif, monospace;
+}
+
+table{
+  height: 5vw;
+}
+td{
+  width: 33%;
+}
+
+img.start{
+  background-color:#660033;
+}
+
+td.arrow{
+  text-align: center;
+  width: 33%;
+  height: 2%;
+  font-size: 20pt;
+  font-family: serif, monospace;
+  border: 1px solid black;
+}
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  background-color: white;
+  width: 200pt;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+.custom-select: hover{
+  background-color: rgba(0, 0, 0, 0.1);
 }

@@ -1,57 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset = "utf-8"/>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<link rel="stylesheet" href="styling/SideBarNav-style.css"> </link>
-<link rel="stylesheet" href="styling/augsburgstyle.css"> </link>
-
+<html>
 <head>
-  <!-- this is to be used as a template for the other building info pages-->
-  <input type="checkbox" id = "check">
-  <label for="check">
-    <i class="fas fa-bars" id="navbar"></i>
-    <i class="fas fa-times" id="cancel"></i>
-  </label>
-
-  <div class="sidebar">
-    <header> Menu </header>
-    <ul>
-      <li> <a href="SchoolSelection.html"> Home  </a> </li>
-      <li> <a href="#">  Events </a> </li>
-      <li> <a href="financialaid.html" > Financial Aid Calculator </a> </li>
-      <li> <a href="#" > Athletics </a> </li>
-      <li> <a href="https://admissions.augsburg.edu/apply/"> Apply Now </a> </li>
-    </ul>
-  </div>
-
-<title> Urness & Mortenson Hall</title>
-
+  <meta charset = "utf-8"/>
+  <title> Urness Tower</title>
+    <link href= "styling/AugsburgStyle.css" rel = "stylesheet" type = "text/css">
+  <link rel="stylesheet" href="styling/sidebarnav-style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="AddMenu.js" type="text/javascript"></script>
+</head>
 <header>
-  <table class="lowbar">
+  <table class="bar">
     <tr>
-      <td class="bar"> <!-- link back to map --> Map</td>
-      <td class="bar"> <a href="MoreInfoTemplate.html" class="homelink">
-        More Information</a></td>
-      <td class="bar"> <a href="AugsburgHome.html" class="homelink">Home</a> </td>
+      <td class="bar"> <input type="checkbox" id = "check">
+          <label for="check">
+            <i class="fas fa-bars" id="navbar"></i>
+            <i class="fas fa-times" id="cancel"></i>
+          </label><div class="sidebar"> </div></td>
+      <td class="barlogo"> <h1><img src="Images/augsburg_logo.png"> Urness Tower and Mortensen</h1></td>
+      <td class="bar"> <a href="AugsburgHome.html"><img src="Images/homeIcon.png"></a></td>
     </tr>
   </table>
-
-</head>
-
-
-
 </header>
 
 <body>
-  <img src= "https://upload.wikimedia.org/wikipedia/commons/6/6a/Urness_Tower%2C_Augsburg_College.jpg" alt = "Building Tower" style="width:40%">
-  <img src= "https://mn.reel-scout.com/up_images/6/sm/3490846.jpg" alt = "Dorm Example" style="width:40%">
-  <p class="building"> <!-- informatino about the specific building --> Urness Hall is a 9 story dormatory that overlooks
-    the city of Minneapolis. The residence hall is typically meant for first year residents. It is equipped with
-    18 rooms on each floor, a lounge space, as well as community bathroom. As for Mortenson Hall, it stands
-    at 15 stories tall with 13 residential floors (8 dorms on each floor). </p>
+<p>  <img src= "https://upload.wikimedia.org/wikipedia/commons/6/6a/Urness_Tower%2C_Augsburg_College.jpg" alt = "Building Tower" style="width:40%">
+  <img src= "https://mn.reel-scout.com/up_images/6/sm/3490846.jpg" alt = "Dorm Example" style="width:40%"></p>
+<p class="building"> Urness Tower was built in 1966 and funded by Mr. and Mrs. Andrew Urness.
+  It is specficially designed for first year students. Each floor of the tower has
+  18 rooms, a common area, and a community bathroom. Each floor also has a specific
+  theme. For example, the third floor is for STEM leaders that identify as female.
+  The tower also offers Wi-Fi, cable television, computer lab access, free laundry,
+  and a skyway to Christensen. Each room includes a dresser, bed, closet, desk, and desk chair.
+  </p>
 <p>
-</body>
-
+  <table class="lowbar">
+    <tr>
+      <td class="bar"> <a href="AugsburgHome.html" class="homelink"> Map </a></td>
+      <td class="bar"> <a href="https://www.augsburg.edu/residencelife/halls/urness/" class="homelink">
+        More Information</a></td>
+      <td class="bar"> <a href="AugsburgHome.html" class="homelink">Home</a> </td>
+    </tr>
+    <tr>
+      <td class="arrow"> <a href="ChristensenCenter.html"><img src="Images/backArrow.png"></td>
+      <td>  </td>
+      <td class="arrow"> <a href="LutherHall.html"><img src="Images/nextArrow.png" class="arrow"></a></td>
+    </tr>
+  </table>
 </p>
-
-</html>

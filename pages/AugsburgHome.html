@@ -4,8 +4,23 @@
   <meta charset="utf-8"/>
   <title> Augsburg Tour Homepage </title>
   <link href= "styling/AugsburgStyle.css" rel = "stylesheet" type = "text/css">
+  <link rel="stylesheet" href="styling/sidebarnav-style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="AddMenu.js" type="text/javascript"></script>
 </head>
 <body>
-  <h1> <img src = "Images/augsburg_logo.png" class="logo"> Virtual Tour </h1>
+  <table>
+    <tr>
+      <td><input type="checkbox" id = "check">
+          <label for="check">
+            <i class="fas fa-bars" id="navbar"></i>
+            <i class="fas fa-times" id="cancel"></i>
+          </label><div class="sidebar"> </div>
+      </td>
+      <td><h1> <img src = "Images/augsburg_logo.png">Virtual Tour</h1></td>
+      <td><a href="ChristensenCenter.html"><img src="Images/start.png"></a></td>
+    </tr>
+  </table>
   <img src="Images/tour_image.jpeg">
 </body>
+</html>
