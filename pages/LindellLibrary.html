@@ -1,58 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset = "utf-8"/>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<link rel="stylesheet" href="styling/SideBarNav-style.css"> </link>
-<link rel="stylesheet" href="styling/augsburgstyle.css"> </link>
-
+<html>
 <head>
-  <!-- this is to be used as a template for the other building info pages-->
-  <input type="checkbox" id = "check">
-  <label for="check">
-    <i class="fas fa-bars" id="navbar"></i>
-    <i class="fas fa-times" id="cancel"></i>
-  </label>
-
-  <div class="sidebar">
-    <header> Menu </header>
-    <ul>
-      <li> <a href="SchoolSelection.html"> Home  </a> </li>
-      <li> <a href="#">  Events </a> </li>
-      <li> <a href="financialaid.html" > Financial Aid Calculator </a> </li>
-      <li> <a href="#" > Athletics </a> </li>
-      <li> <a href="https://admissions.augsburg.edu/apply/"> Apply Now </a> </li>
-    </ul>
-  </div>
-
-<title> Lindell Library </title>
-
+  <meta charset = "utf-8"/>
+  <title> Lindell Library</title>
+  <link href= "styling/AugsburgStyle.css" rel = "stylesheet" type = "text/css">
+  <link rel="stylesheet" href="styling/sidebarnav-style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="AddMenu.js" type="text/javascript"></script>
+</head>
 <header>
-  <table class="lowbar">
+  <table class="bar">
     <tr>
-      <td class="bar"> <!-- link back to map --> Map</td>
-      <td class="bar"> <a href="MoreInfoTemplate.html" class="homelink">
-        More Information</a></td>
-      <td class="bar"> <a href="AugsburgHome.html" class="homelink">Home</a> </td>
+      <td class="bar"><input type="checkbox" id = "check">
+          <label for="check">
+            <i class="fas fa-bars" id="navbar"></i>
+            <i class="fas fa-times" id="cancel"></i>
+          </label><div class="sidebar"> </div></td>
+      <td class="barlogo"> <h1><img src="Images/augsburg_logo.png"> Lindell Library</h1></td>
+      <td class="bar"> <a href="AugsburgHome.html"><img src="Images/homeIcon.png"> </a></td>
     </tr>
   </table>
-
-</head>
-
-
-
 </header>
 
 <body>
-  <img src = "https://upload.wikimedia.org/wikipedia/commons/d/d2/Lindell_Library_%28Augsburg_College%29.JPG" alt="Library Front" style="width:40%">
-  <img src = "https://www.augsburg.edu/news/wp-content/uploads/sites/29/2013/04/gage_center.jpg" alt = "Gage Center" style="width:40%">
-<p class="building"> <!-- informatino about the specific building --> The Lindell Library is a three story building that offers students a wide range of resources. <br>
-  3rd Floor: Offers individual and group study spaces along with computers for coursework. <br>
-  2nd Floor: Home to the CLASS Offices, TRIO Student Support Services, College Possible, Academic Advising, and the Academic Skills Office. <br>
-  1st Floor: A learning commons that allows students to checkout books, movies, and even laptops. <br>
-  Basement: Known as the quiet floor where students can go if they seek peace and quiet when studying. <br></p>
+<p>  <img src = "https://upload.wikimedia.org/wikipedia/commons/d/d2/Lindell_Library_%28Augsburg_College%29.JPG" alt="Library Front" style="width:40%">
+  <img src = "https://www.augsburg.edu/news/wp-content/uploads/sites/29/2013/04/gage_center.jpg" alt = "Gage Center" style="width:40%"></p>
+<p class="building"> The Lindell Library is our three story library that is connected
+  to the rest of campus through three skyways. It was built in 1997. There are individual study spaces,
+  group meeting rooms, and 300 computers for free printing and homework. Lindell also
+  houses the Writing lab, the CLASS office, TRIO student support services, College Possible,
+  Academic Advising, and the Academic Skills office. This is also where the IT department
+  is located if you need help with your devices.
+  <br>3rd Floor: Offers individual and group study spaces along with computers for coursework. <br>
+    2nd Floor: Home to the CLASS Offices, TRIO Student Support Services, College Possible, Academic Advising, and the Academic Skills Office. <br>
+    1st Floor: A learning commons that allows students to checkout books, movies, and even laptops. <br>
+    Basement: Known as the quiet floor where students can go if they seek peace and quiet when studying. <br>
+  </p>
 <p>
-</body>
-
+  <table class="lowbar">
+    <tr>
+      <td class="bar"> <a href="AugsburgHome.html" class="homelink">Map</a></td>
+      <td class="bar"> <a href="https://library.augsburg.edu/" class="homelink">
+        More Information</a></td>
+      <td class="bar"> <a href="AugsburgHome.html" class="homelink">Home</a> </td>
+    </tr>
+    <tr>
+      <td class="arrow"> <a href="SverdrupHall.html"><img src="Images/backArrow.png"></td>
+      <td>  </td>
+      <td class="arrow"> <a href="HagforsBuilding.html"><img src="Images/nextArrow.png" class="arrow"></a></td>
+    </tr>
+  </table>
 </p>
 
 </html>
