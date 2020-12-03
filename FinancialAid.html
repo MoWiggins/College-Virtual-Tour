@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<meta charset="UTF-8">
+<!-- Header -->
+<head>
+<h1>
+Financial Aid Calculator
+</h1>
+<p>
+Welcome to our financial aid calculator, every student should know the cost of their education. We are here to help you with that on your virtual college tour.
+Please fill out the following information to estimate your financial need based on income, assets, family size and demographics.
+</p>
+</head>
+<!-- EFC + FAFSA GRANTS + OUTSIDE SCHOLARSHIPS + AUGSBURG SCHOLARSHIPS - AUGSBURG TUITION -->
+
+<body>
+
+<!-- EFC -->
+<p> Expected Family Contribution </p>
+<div><label for="efc">What is your EFC?</label>
+<input type="input" id="household" name="household" placeholder="$40000">
+
+
+<!-- FAFSA -->
+<p>FAFSA Grants</p>
+<div><label for="pell"> How much is your FAFSA Pell Grant?:</label>
+<input type="input" id="pell" name="pell" placeholder="$5000">
+
+<!-- Any Outside Scholarships? -->
+<p>Outside Scholarships</p>
+<p>What is the total amount of your outside scholarships:</p>
+<input type="input" id="OutsideScholarships" name="OutsideScholarships" placeholder="$5000">
+
+<!--AUGSBURG SCHOLARSHIPS-->
+<p>Augsburg Scholarships</p>
+<p>What is the total amount of your Augsburg scholarships:</p>
+<input type="input" id="AugsburgScholarships" name="AugsburgScholarships" placeholder="$5000">
+
+<button
+type="button"
+name="button"
+onclick="FAC()">
+Click Me
+</button>
+
+<script type="text/javascript">
+  function FAC()
+  {
+  var householdCost = parseInt(document.getElementById("household").value);
+  var fafsaCost     = parseInt(document.getElementById("pell").value);
+  var OutsideScholarships  = parseInt(document.getElementById("OutsideScholarships").value);
+  var AugsburgScholarships = parseInt(document.getElementById("AugsburgScholarships").value);
+  var AugsburgTuition = 39995
+  var totalScholarships = householdCost + fafsaCost + OutsideScholarships + AugsburgScholarships;
+  var SemesterAmount = (AugsburgTuition-totalScholarships)/2
+
+  alert("Your estimated tuition per semester is:  " + SemesterAmount);
+  }
+
+</script>
+</body>
+
+</html>
