@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
 
 body{
-  font-family: 'Roboto', cursive;
+  font-family: 'arial', cursive;
 }
 
 *{
@@ -14,7 +14,7 @@ body{
 
 .sidebar {
   position: fixed;
-  left: -250px;
+  left: -300px;
   width: 250px;
   height:100%;
   background: maroon;
@@ -70,12 +70,14 @@ label #navbar{
 label #cancel{
   z-index: 1111;
   left: -195px;
-  top: 17px;
+  top: 37px;
   font-size: 30px;
   color: maroon;
   padding: 3px; 8px;
   transition: all .5s ease;
 }
+
+
 
 #check:checked ~ .sidebar{
   left: 0;
@@ -90,5 +92,5 @@ label #cancel{
 
 
 #check:checked ~ label #cancel{
-  left: 180px;
+  left: 200px;
 }
