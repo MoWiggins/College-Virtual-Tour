@@ -1,13 +1,15 @@
 
   .card{
     box-sizing: border-box;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
     max-width: 300px;
     margin: auto;
     text-align: center;
     font-family: sans-serif;
     color: black;
-    background-color: darkgrey;
+  background-color: darkgrey;
+border-radius: 10px;
+
 }
 
  button{
@@ -20,5 +22,32 @@
    cursor: pointer;
    width: 100%;
    font-size: 18px;
-
  }
+
+label{
+  color: black;
+  font-size: 30px;
+  font-style: bold;
+  font-weight: bold;
+
+}
+
+header{
+  color: black;
+  font-size: 50px;
+  font-style: bold;
+  font-weight: bold;
+}
+
+h1{
+  background-color: darkgrey;
+}
+
+p{
+background-color: darkgrey;
+}
+
+
+*{
+  background-color: #660033;
+}
