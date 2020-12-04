@@ -17,7 +17,7 @@ body{
   left: -300px;
   width: 250px;
   height:100%;
-  background: maroon;
+  background: #660033;
   transition: all .5s ease;
 }
 
