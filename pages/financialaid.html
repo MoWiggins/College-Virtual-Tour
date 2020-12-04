@@ -69,12 +69,28 @@ Please fill out the following information to estimate your financial need based 
 
   <button
   type="button"
-  id="button">
+  id="button"
+  onclick="FAC()">
   Click Me
   </button>
 
 <!-- javascript code -->
 <script type="text/javascript">
+
+function FAC()
+{
+var efc = parseInt(document.getElementById("efc").value);
+var pell     = parseInt(document.getElementById("pell").value);
+var outside  = parseInt(document.getElementById("OutsideScholarships").value);
+var augsburg = parseInt(document.getElementById("AugsburgScholarships").value);
+var AugsburgTuition = 39995
+var totalScholarships = efc + pell + outside + augsburg;
+var SemesterAmount = (AugsburgTuition-totalScholarships)/2
+
+alert("Your estimated tuition per semester is:  " + SemesterAmount);
+}
+
+
 //An array where we will hold the info about a students potential financial aid.
 let studentAidInfoArray = [];
 
@@ -89,8 +105,8 @@ const addStudentAidInfo = (ev) => {
   studentAidInfoArray.push(studentAidInfo); //we add the info into the array
   //for display purposes only
   console.warn('added' , {studentAidInfoArray} );
-  let pre = document.querySelector('#msg pre');
-  pre.textContent = '\n' + JSON.stringify(studentAidInfoArray, '\t', 2 );
+  //let pre = document.querySelector('#msg pre');
+  //pre.textContent = '\n' + JSON.stringify(studentAidInfoArray, '\t', 2 );
   localStorage.setItem('StudentAidInfo' , JSON.stringify(studentAidInfoArray) );
 }
 document.addEventListener("DOMContentLoaded" , () => {
